@@ -7,7 +7,7 @@
  * @license Licensed under MIT
  * @link https://www.baumrock.com
  */
-class RockCarbon extends WireData implements Module, ConfigurableModule {
+class RockCarbon extends WireData implements Module {
 
   public static function getModuleInfo() {
     return [
@@ -23,6 +23,6 @@ class RockCarbon extends WireData implements Module, ConfigurableModule {
   }
 
   public function load() {
-    require_once('vendor/autoload.php');
+    require_once(__DIR__.'/vendor/autoload.php');
   }
 }
